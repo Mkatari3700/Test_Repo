@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "RXOwLVe9YFkLIcqpvt8UAPUMXlDtkA/PktP0sOsw1PawD7vmDAKcWqM8Hli/xb14luxceqtHfnGx1I/Gfx9GmA==",
+  "success": true,
+  "projectFilePath": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\Test_Repo_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
