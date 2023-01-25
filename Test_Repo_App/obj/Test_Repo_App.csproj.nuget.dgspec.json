@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\Test_Repo_App.csproj": {}
+    "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App.csproj": {}
   },
   "projects": {
-    "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\Test_Repo_App.csproj": {
+    "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\Test_Repo_App.csproj",
+        "projectUniqueName": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App.csproj",
         "projectName": "Test_Repo_App",
-        "projectPath": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\Test_Repo_App.csproj",
+        "projectPath": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App.csproj",
         "packagesPath": "C:\\Users\\Katari.Manikanta\\.nuget\\packages\\",
-        "outputPath": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\Test_Repo_App\\obj\\",
+        "outputPath": "D:\\Poc's\\Test_Repo\\Test_Repo\\Test_Repo_App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
