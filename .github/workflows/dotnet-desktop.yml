@@ -1,0 +1,49 @@
+name: Deploy web APP
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: 
+    - master
+env:
+  AZURE_WEB_APP_NAME: 'Test-Repo-v1'
+  AZURE_WEB_PACKAGE_NAME: './publish'
+  ARTIFACT_FOLDER: './Artifact'
+    
+jobs:
+  publish:
+   runs-on: ubuntu-latest
+   
+   steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .Net
+      uses: actions/setup-dotnet@v3
+      with: 
+        dotnet-version: '6.0.x'
+        
+    - name: Restore
+      run: dotnet restore ./Test_Repo_App.sln
+      
+    - name: build
+      run: dotnet build ./Test_Repo_App.sln --configuration release --no-restore
+      
+    - name: Publish
+      run: dotnet publish ./Test_Repo_App.sln --configuration release --no-build --output '${{ env.AZURE_WEB_PACKAGE_NAME }}'
+    
+    - name: Upload GitHub Pages artifact
+      uses: actions/upload-pages-artifact@v1.0.7
+      with:
+      # Artifact name
+        name: DotnetAppArtificat # optional, default is github-pages
+      # Path of the directory containing the static assets.
+        path: ${{ env.AZURE_WEB_PACKAGE_NAME }} # default is _site/
+      # Duration after which artifact will expire in days.
+        #retention-days: 0 # optional, default is 1  
+    
+    - name: Deployment
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEB_APP_NAME }}
+        publish-profile: ${{ secrets.AZURE_APP_PROFILE }}
+        package: ${{ env.AZURE_WEB_PACKAGE_NAME }}
