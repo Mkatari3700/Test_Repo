@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: 
-    - master
+    - main
 env:
   AZURE_WEB_APP_NAME: 'Test-Repo-v1'
   AZURE_WEB_PACKAGE_NAME: './publish'
